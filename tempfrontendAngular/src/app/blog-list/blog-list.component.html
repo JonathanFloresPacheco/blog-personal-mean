@@ -1,0 +1,28 @@
+ <div class="container">
+    <header>
+      <h1>Lista de posts</h1>
+    </header>
+  
+    <div class="main-content">
+    <select (change)="onSelectPost($any($event.target).value)">
+        <option value="">Seleccionar post...</option>
+        <option *ngFor="let post of _posts" [value]="post._id">{{post.title}}</option>
+    </select>
+        
+    <div *ngIf="selectedPostId">
+        <a routerLink="/blog-list/{{selectedPostId}}">Ver detalle</a>
+        <!-- <a>Ver detalle</a> -->
+    </div>
+      <!-- <div class="post" *ngFor="let post of _posts">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+        <p>Fecha de creación: {{ post.createdAt | date:'medium' }}</p>
+      </div> -->
+    </div>
+  
+    <footer>
+      <p>Copyright &copy; 2024</p>
+    </footer>
+  </div>
+  
+  

@@ -1,0 +1,22 @@
+<div class="container">
+    <header>
+      <h1>Detalle de post</h1>
+    </header>
+  
+    <div class="main-content" *ngIf="_posts">
+        <h2>{{ _posts.title }}</h2>
+        <p>{{ _posts.content }}</p>
+        <p>Fecha de creación: {{ _posts.createdAt | date:'medium' }}</p>
+
+        <button (click)="onDelete()">Eliminar Post</button>
+        <br/>
+        <br/>
+        <a routerLink="/blog-list">Volver a blog</a>
+    </div>
+  
+    <footer>
+      <p>Copyright &copy; 2024</p>
+    </footer>
+  </div>
+  
+  

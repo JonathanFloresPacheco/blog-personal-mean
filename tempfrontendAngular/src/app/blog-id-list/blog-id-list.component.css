@@ -1,0 +1,53 @@
+
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+  }
+  
+  h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  
+  .main-content {
+    padding: 16px;
+    background-image: url("https://pixabay.com/es/photos/negro-tablero-rastros-de-tiza-1072366/");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .post {
+    margin: 16px 0;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .post h2 {
+    margin-top: 0;
+  }
+  
+  .post p {
+    margin-bottom: 8px;
+  }
+  
+  .post .date {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+  }
+  
